@@ -1,8 +1,8 @@
 const MASSNUMS = [4, 7, 9, 2, 8, 4, 10, 15, 6, 19];
 // const MASSNUMS = [-1, 0, 1, 2, 4, 5];
-let flag = true;
 
-function get_avg(mass) {
+function getResyltCheck(mass) {
+    let flag = true;
     if (mass.length == 0) {
         alert("Massive is hollow!");
         return;
@@ -21,4 +21,4 @@ function get_avg(mass) {
     return flag;
 }
 
-alert(`sort: ${get_avg(MASSNUMS)}`);
+alert(`sort: ${getResyltCheck(MASSNUMS)}`);

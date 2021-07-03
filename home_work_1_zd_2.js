@@ -1,7 +1,6 @@
 const MASSNUMS = [4, 7, 9, 2, 8, 4, 10, 15, 6, 19];
-let obj = {};
 
-function get_avg(mass) {
+function getAvg(mass) {
     if (mass.length == 0) {
         alert("Massive is hollow!");
         return;
@@ -12,8 +11,7 @@ function get_avg(mass) {
         sum += mass[i];
         temp_avg = sum / mass.length;
     }
-    obj = { avg: temp_avg };
-    return obj;
+    return { avg: temp_avg };
 }
 
-alert(`avg: ${get_avg(MASSNUMS).avg}`);
+alert(`avg: ${getAvg(MASSNUMS).avg}`);

@@ -1,7 +1,6 @@
 const MASSNUMS = [4, 7, 9, 2, 8, 4, 10, 15, 6, 19];
-let obj = {};
 
-function get_min_and_max(mass) {
+function getMinMaxValue(mass) {
     if (mass.length == 0) {
         alert("Massive is hollow!");
         return;
@@ -19,8 +18,7 @@ function get_min_and_max(mass) {
             }
         }
     }
-    obj = { min: temp_min, max: temp_max };
-    return obj;
+    return { min: temp_min, max: temp_max };
 }
 
-alert(`min: ${get_min_and_max(MASSNUMS).min}, max: ${get_min_and_max(MASSNUMS).max}`);
+alert(`min: ${getMinMaxValue(MASSNUMS).min}, max: ${getMinMaxValue(MASSNUMS).max}`);
