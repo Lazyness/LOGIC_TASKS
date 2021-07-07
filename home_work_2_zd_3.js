@@ -1,9 +1,9 @@
-let str = "JavaScript";
+let str = "12345";
 
 function reverse(str) {
     let newStr = "";
-    if (!isNaN(str)) {
-        alert("You enter not number!");
+    if (str === Number(str)) {
+        alert("You enter not string!");
         return `You enter ${str}`;
     }
     for (let i = str.length - 1; i >= 0; i--) {
