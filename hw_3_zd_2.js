@@ -1,13 +1,11 @@
 
-function printJobName(sarah) {
-    const {
-        name: nameUser,
-        job: {
-            name,
-            hiringDate
-        }
-    } = sarah;
-    
+function printJobName({
+    name:nameUser,
+    job:{
+        name,
+        hiringDate
+    }
+}) {
     console.log(name);
 }
 
