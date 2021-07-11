@@ -1,10 +1,3 @@
-const sarah = {
-    name: 'Sarah',
-    job: {
-        name: 'Andersen',
-        hiringDate: '23.07.2020'
-    }
-}
 
 function printJobName(sarah) {
     const {
@@ -14,8 +7,14 @@ function printJobName(sarah) {
             hiringDate
         }
     } = sarah;
-
+    
     console.log(name);
 }
 
-printJobName(sarah);
+printJobName({
+    name: 'Sarah',
+    job: {
+        name: 'Andersen',
+        hiringDate: '23.07.2020'
+    }
+});
