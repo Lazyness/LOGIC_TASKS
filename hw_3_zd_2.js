@@ -6,16 +6,16 @@ const sarah = {
     }
 }
 
-const {
-    name: nameUser,
-    job: {
-        name,
-        hiringDate
-    }
-} = sarah;
+function printJobName(sarah) {
+    const {
+        name: nameUser,
+        job: {
+            name,
+            hiringDate
+        }
+    } = sarah;
 
-function printJobName() {
     console.log(name);
 }
 
-printJobName();
+printJobName(sarah);
