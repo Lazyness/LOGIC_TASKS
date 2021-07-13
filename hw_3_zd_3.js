@@ -1,9 +1,4 @@
 function deleteDublicate(arr) {
-    arr.forEach(function (item, i) {
-        console.log("indexArr: " + i + ": " + "value: " + item.id);
-    })
-    console.log("-----------------------");
-    
     let set = new Set(arr);
     let result = [];
 
@@ -19,7 +14,6 @@ function deleteDublicate(arr) {
     set.forEach(x => result.push(x));
     arr = result;
     set.clear;
-
     arr.forEach(function (item, i) {
         console.log("indexArr: " + i + ": " + "value: " + item.id);
     })
