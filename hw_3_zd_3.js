@@ -1,22 +1,14 @@
 function deleteDublicate(arr) {
-    let set = new Set(arr);
-    let result = [];
+    let map = new Map();
 
-    for (let i = 0; i < set.size - 1; i++) {
-        let j = 0;
-        for (j = i + 1; j < set.size; j++) {
-            if (arr[i].id == arr[j].id) {
-                set.delete(arr[j]);
-            }
-        }
+    for (let i = 0; i < arr.length; i++) {
+        map.set(arr[i].id, arr[i]);
     }
+    arr.splice(0, arr.length);
+    map.forEach(x => arr.push(x));
+    map.clear();
 
-    set.forEach(x => result.push(x));
-    arr = result;
-    set.clear;
-    arr.forEach(function (item, i) {
-        console.log("indexArr: " + i + ": " + "value: " + item.id);
-    })
+    return arr;
 }
 
 const arr = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 3 }, { id: 2 }, { id: 1 }, { id: 4 }];
