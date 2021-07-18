@@ -6,6 +6,4 @@ let sumValue = {
 function calc() {
     return this.a + this.b;
 }
-
-let funcSum = calc.bind(sumValue);
-console.log(funcSum());
+console.log(calc.call(sumValue));
